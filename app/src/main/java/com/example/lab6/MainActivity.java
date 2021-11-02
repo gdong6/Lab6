@@ -71,17 +71,18 @@ public class MainActivity extends FragmentActivity {
             });
         }
     }
-/*
+
     @Override
     public void onRequestPermissionsResult(int requestCode,
                                            @NonNull String[] permissions,
-                                           @NonNull int[] grantResults){
-        if (requestCode == PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION){
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                                           @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 displayMyLocation();
             }
         }
 
-    }  */
+    }
 
 }
